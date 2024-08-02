@@ -1,5 +1,8 @@
 # Synchronous vs. Asynchronous vs. Multithreading
 
+![Sample Image](https://miro.medium.com/v2/resize:fit:1558/1*6YjH0YEvGBxhdOHb3FRfqQ.png)
+
+
 ## 1. Synchronous
 
 - Executes tasks one after the other. If there are multiple tasks, they are processed sequentially, blocking subsequent tasks until the current one finishes.
@@ -14,16 +17,8 @@
 
 - In the main thread, the CPU executes code line by line and cannot proceed to the next line until the current one is finished.
 
-## 2. Multithreading
 
-- Utilizes multiple threads to execute tasks concurrently, reducing overall time by performing multiple operations simultaneously.
-
-### Example:
-- Using the previous example:
-    - Each customer's order is handled by a separate thread.
-- Total time: 3 seconds, as all tasks are executed in parallel.
-
-## 3. Asynchronous
+## 2. Asynchronous
 
 - Allows tasks to run independently of the main program flow, using a scheduler to manage task execution without blocking the main thread.
 
@@ -42,4 +37,16 @@
     - **Await**: Pauses the execution of a coroutine until the awaited task is completed.
     - **Event Loop**: Continuously checks for and executes tasks.
     - **Result**: The outcome of an asynchronous operation.
+
+![Sample Image](https://miro.medium.com/v2/resize:fit:1276/1*0KqxBjbiEriVNjbnZWkRfA.jpeg)
+
+
+## 3. Multithreading
+
+- Utilizes multiple threads to execute tasks concurrently, reducing overall time by performing multiple operations simultaneously.
+
+### Example:
+- Using the previous example:
+    - Each customer's order is handled by a separate thread.
+- Total time: 3 seconds, as all tasks are executed in parallel.
 
